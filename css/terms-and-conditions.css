@@ -1,0 +1,27 @@
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans-Light", sans-serif;
+}
+
+p {line-height: 1.7em;}
+.main {padding: 12px;}
+
+@media only screen and (min-width: 768px) {
+  .main {padding: 108px;}
+}

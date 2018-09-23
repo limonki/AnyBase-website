@@ -1,0 +1,280 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans-Light", sans-serif;
+}
+
+.anim {
+  position: relative;
+  top: 30px;
+  opacity: 0.0;
+}
+
+.start img {padding: 12px;}
+.center {text-align: center;}
+
+.elem {
+  text-align: center;
+  padding: 16px;
+}
+
+.elem:first-child {padding-top: 48px;}
+
+.title {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 36px;
+  color: #571845;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.text {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 20px;
+  padding-bottom: 14px;
+  line-height: 1.7em;
+}
+
+.text a {
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #dd838e;
+}
+
+.padding-btn {padding: 8px;}
+
+button.btn {
+  font-family: "OpenSans-Bold", sans-serif;
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(0,0,0,0);
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+button.btn:hover {cursor: pointer;}
+
+.first {
+  color: #92c46d;
+  border: 1px solid #92c46d;
+  transition: all 0.5s;
+}
+
+.first:hover {
+  color: #ffffff;
+  background: #92c46d;
+  transition: all 0.5s;
+}
+
+.second {
+  color: #7c786a;
+  border: 1px solid #7c786a;
+  transition: all 0.5s;
+}
+
+.second:hover {
+  color: #ffffff;
+  background: #7c786a;
+  transition: all 0.5s;
+}
+
+.version {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+  padding-top: 18px;
+}
+
+.note {
+  padding: 24px;
+  background: #eeeeee;
+  border: 2px solid #ffffff;
+}
+
+.note img {
+  width: 48px;
+  height: 100%;
+}
+
+.some-notes .title {
+  color: #000000;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.some-notes .text {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+code {
+  margin: 4px;
+  padding: 12px;
+  display: block;
+}
+
+.note-btn {
+  margin-top: 12px;
+  color: #b5838e;
+  border: 1px solid #b5838e;
+  transition: all 0.5s;
+}
+
+.note-btn:hover {
+  color: #ffffff;
+  background: #b5838e;
+  transition: all 0.5s;
+}
+
+footer {
+  font-size: 12px;
+  padding: 24px;
+  font-family: "OpenSans-Regular", sans-serif;
+  background: #644e5e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+a {text-decoration: none;}
+footer a {color: #e76a68;}
+footer a:hover {color: #ffa5af;}
+
+.cookies-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cookies-button {
+  width: inherit;
+  border: 2px solid #e76a68;
+  border-radius: 32px;
+  margin-top: 12px;
+  padding: 8px;
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.cookies-button.active {background: #e76a68;}
+.cookies-button.margin-8 {margin: 8px;}
+
+#cookies {
+  font-size: 12px;
+  line-height: 2em;
+	width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.65);
+  color: #ffffff;
+  padding: 16px;
+}
+
+#cookies .close {
+  float: right;
+  height: 15px;
+  width: 15px;
+  position: relative;
+}
+
+#cookies .close:after {
+  content: "\78";
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cookies a {color: #e76a68;}
+#cookies a:hover {color: #ffa5af;}
+
+.heart {
+	position: relative;
+  top: 3px;
+  display: inline-block;
+	width: 20px;
+	height: 18px;
+}
+
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	left: 10px;
+	top: 0;
+	width: 10px;
+	height: 16px;
+	background: #b5838e;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+
+.heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+
+.main {padding: 12px;}
+.main-text {text-align: center;}
+
+.change-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.change-text {padding-left: 12px;}
+
+@media only screen and (min-width: 768px) {
+  .elem:first-child {
+    padding: 84px;
+    text-align: left;
+  }
+
+  .downloads-elem {
+    padding: 32px 84px;
+    text-align: left;
+  }
+
+  .main {padding: 108px;}
+  .title {font-size: 64px;}
+}
